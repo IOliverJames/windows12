@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WinApps Hub - Ultimate directory for Windows software, utilities, productivity tools, and web apps. Discover, download, and explore the best Windows applications.">
+    <meta name="keywords" content="Windows software, Windows apps, utilities, productivity tools, download Windows software, Windows 12, Microsoft Store alternative">
+    <meta name="author" content="WinApps Hub">
+    <link rel="canonical" href="https://winapps-hub.onrender.com/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="WinApps Hub - Ultimate Windows Software & Web Apps Directory">
+    <meta property="og:description" content="Discover the best Windows software, utilities, and web apps in one sleek hub.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/0078D4/FFFFFF?text=WinApps+Hub">
+    <meta property="og:url" content="https://winapps-hub.onrender.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WinApps Hub - Ultimate Windows Software Directory">
+    <meta name="twitter:description" content="Your go-to platform for Windows software discovery.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/0078D4/FFFFFF?text=WinApps+Hub">
+
+    <title>WinApps Hub - Ultimate Windows Software & Web Apps Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-windows"></i>
+                <span>WinApps Hub</span>
+            </div>
+            
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search software, tools, utilities...">
+            </div>
+
+            <nav class="nav">
+                <select id="categoryFilter" class="category-dropdown">
+                    <option value="">All Categories</option>
+                    <option value="Productivity">Productivity</option>
+                    <option value="System Utilities">System Utilities</option>
+                    <option value="Security">Security</option>
+                    <option value="Media Tools">Media Tools</option>
+                    <option value="Web Apps">Web Apps</option>
+                    <option value="Developer Tools">Developer Tools</option>
+                </select>
+                <a href="https://win12.info/" target="_blank" rel="noopener noreferrer" class="win12-link">
+                    <i class="fas fa-rocket"></i> Windows 12
+                </a>
+                <button id="requestBtn" class="btn-primary">Request Software</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Best Windows Software</h1>
+            <p class="hero-subtitle">Your official hub for productivity tools, utilities, security software, and modern web apps for Windows.</p>
+            
+            <div class="featured-banner">
+                <div class="banner-content">
+                    <span class="badge">Featured</span>
+                    <h2>Windows 12 is here</h2>
+                    <p>Experience the future of Windows. Download preview builds and explore new AI features.</p>
+                    <a href="https://win12.info/" target="_blank" rel="noopener noreferrer" class="btn-hero">
+                        Visit Windows 12 Portal <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOFTWARE GRID -->
+    <main class="main-content">
+        <div class="section-header">
+            <h2>Software Directory</h2>
+            <div class="pill-filters" id="pillFilters">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <div class="software-grid" id="softwareGrid">
+            <!-- Populated by JS -->
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <i class="fas fa-windows"></i>
+                        <span>WinApps Hub</span>
+                    </div>
+                    <p>The premier destination for Windows software discovery.</p>
+                </div>
+                
+                <div>
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Submit Software</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">API Docs</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="showModal('privacy')">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showModal('terms')">Terms of Service</a></li>
+                        <li><a href="#" onclick="showModal('dmca')">DMCA</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Featured Partner</h4>
+                    <a href="https://win12.info/" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <strong>Windows 12 Portal</strong>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2026 WinApps Hub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
